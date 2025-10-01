@@ -1,4 +1,5 @@
-<h2 align="left">Hi 👋! I am an aspiring full-stack developer from India</h2>
+<h1 align="center">Hi 👋, I'm Shibraj Das</h1>
+<h3 align="center">A passionate Full Stack devoloper!!! based in India.</h3>
 
 ###
 
