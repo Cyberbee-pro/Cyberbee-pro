@@ -29,11 +29,12 @@
 - 📫 How to reach me **cyberbeepro@gmail.com**
 <br clear="both">
 
-<div align="left">
+<div >
   <img src="https://github-readme-stats.vercel.app/api/top-langs?username=Cyberbee-pro&locale=en&hide_title=false&layout=compact&card_width=320&langs_count=5&theme=dracula&hide_border=true" height="150" alt="languages graph"  />
+  
+  <img src="https://streak-stats.demolab.com?user=Cyberbee-pro&locale=en&mode=daily&theme=dracula&hide_border=true&border_radius=5" height="150" alt="streak graph"  />
   <p align="left"> <img src="https://github-readme-stats.vercel.app/api?username=Cyberbee-pro&show_icons=true&theme=gotham&hide_border=true" alt="Cyberbeepro" />
 
-  <img src="https://streak-stats.demolab.com?user=Cyberbee-pro&locale=en&mode=daily&theme=dracula&hide_border=true&border_radius=5" height="150" alt="streak graph"  />
 </div>
 
 ###
