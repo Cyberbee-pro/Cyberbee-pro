@@ -13,7 +13,7 @@
 <p align="left"> <a href="https://twitter.com/mrcyberbee" target="blank"><img src="https://img.shields.io/twitter/follow/mrcyberbee?logo=twitter&style=for-the-badge" alt="mrcyberbee" /></a> </p>
 - 🔭 I’m currently working on [Hacathon-0(SIH)](https://github.com/Cyberbee-pro/Hacathon-0)
 
-- 🌱 I’m currently learning **React,kotlin and js**
+- 🌱 I’m currently learning **kotlin,nodejs and js**
 
 - 👯 I’m looking to collaborate on [Hacathon-0(SIH)](https://github.com/Cyberbee-pro/Hacathon-0)
 
