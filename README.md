@@ -27,6 +27,8 @@
 - 💬 Ask me about **C,C++,HTML,CSS,Java**
 
 - 📫 How to reach me **cyberbeepro@gmail.com**
+
+-⚡ Fun fact **I am good at photography ;)**
 <br clear="both">
 
 <div >
@@ -42,6 +44,18 @@
 <img align="right" height="150" src="https://i.pinimg.com/originals/29/d2/5c/29d25ccd5a0e64ac277f56d0701ef74c.gif"  />
 
 ###
+
+<h3 align="left">Connect with me:</h3>
+<p align="left">
+<a href="https://www.instagram.com/cyberbee_pro" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/instagram.svg" alt="Cyberbee_pro" height="30" width="40" /></a>
+<a href="https://leetcode.com/u/Cyberbee_pro/" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/leet-code.svg" alt="Cyberbee_pro" height="30" width="40" /></a>
+<a href="https://www.linkedin.com/in/shibraj-das/" target="blank"><img align="center" src="https://img.icons8.com/fluency/48/linkedin.png" alt="Shibraj Das" height="30" width="40" /></a>
+</p>
+
+###
+
+
+<h3 align="left">My Skills:</h3>
 
 <div align="left">
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" height="30" alt="javascript logo"  />
