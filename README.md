@@ -16,8 +16,8 @@
 
 
 <p align="left"> <a href="https://twitter.com/mrcyberbee" target="blank"><img src="https://img.shields.io/twitter/follow/mrcyberbee?logo=twitter&style=for-the-badge" alt="mrcyberbee" /></a> </p>
--
-- 🔭 I’m currently working in GitHub-Community-SRM 
+
+- 🔭 I’m currently working in **GitHub-Community-SRM** 
 
 - 🌱 I’m currently learning **kotlin,nodejs and js**
 
