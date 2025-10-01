@@ -7,16 +7,19 @@
   <img src="https://visitor-badge.laobi.icu/badge?page_id=Cyberbee-pro.Cyberbee-pro&"  />
 </div>
 
+
+<p align="left"> <a href="https://github.com/ryo-ma/github-profile-trophy"><img src="https://github-profile-trophy.vercel.app/?username=cyberbee-pro" alt="cyberbee-pro" /></a> </p>
+
 ###
 <p align="left"> <img src="https://komarev.com/ghpvc/?username=cyberbee-pro&label=Profile%20views&color=0e75b6&style=flat" alt="cyberbee-pro" /> </p>
 
 
 <p align="left"> <a href="https://twitter.com/mrcyberbee" target="blank"><img src="https://img.shields.io/twitter/follow/mrcyberbee?logo=twitter&style=for-the-badge" alt="mrcyberbee" /></a> </p>
-- 🔭 I’m currently working on [Hacathon-0(SIH)](https://github.com/Cyberbee-pro/Hacathon-0)
+- 🔭 I’m currently working in GitHub-Community-SRM 
 
 - 🌱 I’m currently learning **kotlin,nodejs and js**
 
-- 👯 I’m looking to collaborate on [Hacathon-0(SIH)](https://github.com/Cyberbee-pro/Hacathon-0)
+<!-- 👯 I’m looking to collaborate on--> 
 
 - 🤝 I’m looking for help with **DBMS**
 
@@ -102,6 +105,5 @@
 ###
 
 
-<p align="left"> <a href="https://github.com/ryo-ma/github-profile-trophy"><img src="https://github-profile-trophy.vercel.app/?username=cyberbee-pro" alt="cyberbee-pro" /></a> </p>
 
 ###
