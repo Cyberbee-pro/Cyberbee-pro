@@ -1,5 +1,5 @@
 <h1 align="center">Hi 👋, I'm Shibraj Das</h1>
-<h3 align="center">A passionate Full Stack devoloper!!! based in India.</h3>
+<h3 align="center">A Aspiring/passionate Full Stack devoloper!!! based in India.</h3>
 
 ###
 
