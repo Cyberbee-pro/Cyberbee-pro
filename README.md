@@ -19,7 +19,7 @@
 
 - 🔭 I’m currently working in **GitHub-Community-SRM** 
 
-- 🌱 I’m currently learning **kotlin,nodejs and js**
+- 🌱 I’m currently learning **kotlin,js and few js and py frameworks**
 
 <!-- 👯 I’m looking to collaborate on--> 
 
