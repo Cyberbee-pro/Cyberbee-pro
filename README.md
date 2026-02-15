@@ -106,7 +106,7 @@
 
 ###
 
-
+[![Cyberbee's github activity graph](https://github-readme-activity-graph.vercel.app/graph?username=cyberbee-pro&bg_color=282a35&color=ffffff&line=ec7696&point=ffffff&area=true&hide_border=true)
 
 ###
 
