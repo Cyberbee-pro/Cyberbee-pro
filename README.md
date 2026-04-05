@@ -23,11 +23,11 @@
 
 <!-- 👯 I’m looking to collaborate on--> 
 
-- 🤝 I’m looking for help with **DBMS**
+<!-- - 🤝 I’m looking for help with **DBMS** -->
 
-- 💬 Ask me about **C,C++,HTML,CSS,Java**
+- 💬 Ask me about **C,C++,Java,JS/TS,Python**
 
-- 📫 How to reach me **cyberbeepro@gmail.com**
+- 📫 How to reach me **cyb.shibrajdas@gmail.com**
 
 - ⚡ Fun fact **I am good at photography ;)**
 
