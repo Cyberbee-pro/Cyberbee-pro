@@ -25,7 +25,7 @@
 
 <!-- - 🤝 I’m looking for help with **DBMS** -->
 
-- 💬 Ask me about **C,C++,Java,JS/TS,Python**
+- 💬 Ask me about **Arch , C,C++,JS**
 
 - 📫 How to reach me **cyb.shibrajdas@gmail.com**
 
