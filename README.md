@@ -147,11 +147,6 @@
 
 <img src="snake-dark.svg" height="200" alt="snake animation"  />
 
-<div align="left">
-  <a href="https://open.spotify.com/user/xfb8r5uyjbxml00sdsy72iooj">
-    <img src="https://spotify-recently-played-readme.vercel.app/api?user=xfb8r5uyjbxml00sdsy72iooj&count=5&unique=false" alt="Spotify recently played"  />
-  </a>
-</div>
 
 ###
 
