@@ -1,5 +1,7 @@
-<h1 align="center">Hi 👋, I'm Shibraj Das</h1>
-<h3 align="center">A Aspiring/passionate Full Stack devoloper!!! based in India.</h3>
+<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0:330000,40:660000,80:990000,100:ff0000&height=260&section=header&text=Shibraj%20Das&fontSize=82&fontColor=ffffff&fontAlignY=42&animation=fadeIn&desc=%E2%9C%A6%20%20Quantum%20%C2%B7%20security%20%C2%B7%20System%20%C2%B7%20Architect%20%20%E2%9C%A6&descSize=17&descAlignY=65&descColor=ff4d4d"/>
+
+<!-- <h1 align="center">Hi 👋, I'm Shibraj Das</h1>
+#<h3 align="center">A Aspiring/passionate Full Stack devoloper!!! based in India.</h3> -->
 
 ###
 
@@ -70,6 +72,88 @@
 </div>
 
 ###
+
+## `> ACTIVE BUILDS`
+
+<table>
+<tr>
+
+<td width="33%" valign="top">
+<div align="center">
+
+**⬡ &nbsp; Q H A C K**
+
+</div>
+
+Quantum Circuit Simulator with a **Quantum Noir** UI. Custom SVG canvas, 15-gate system, animated Bloch sphere, and real-time simulation flow.
+
+<div align="center">
+
+![Next.js](https://img.shields.io/badge/Next.js-060d18?style=flat-square&logo=nextdotjs&logoColor=00d9ff)
+![React](https://img.shields.io/badge/React-060d18?style=flat-square&logo=react&logoColor=00d9ff)
+![Zustand](https://img.shields.io/badge/Zustand-060d18?style=flat-square&logo=react&logoColor=00d9ff)
+![FastAPI](https://img.shields.io/badge/FastAPI-060d18?style=flat-square&logo=fastapi&logoColor=00d9ff)
+![Qiskit](https://img.shields.io/badge/Qiskit-060d18?style=flat-square&logo=ibm&logoColor=00d9ff)
+
+[![status](https://img.shields.io/badge/●%20Building%20Phase-19cae6?style=flat-square&labelColor=19cae6)](https://github.com/Anchitlahkar)
+
+</div>
+</td>
+
+<td width="33%" valign="top">
+<div align="center">
+
+**⬡ &nbsp; S Y N T H F L O W**
+
+</div>
+
+SynthFlow is a high-performance, open-source music streaming ecosystem built to give the music back to the listener. Inspired by the "01" leek aesthetic, it offers a seamless, high-fidelity audio experience completely free from ad interruptions.
+
+<div align="center">
+
+![Next.js](https://img.shields.io/badge/Next.js-660000?style=flat-square&logo=nextdotjs&logoColor=white)
+![Express](https://img.shields.io/badge/Express-660000?style=flat-square&logo=express&logoColor=white)
+
+![Flutter](https://img.shields.io/badge/Flutter-660000?style=flat-square&logo=flutter&logoColor=white)
+![Swift](https://img.shields.io/badge/Swift-660000?style=flat-square&logo=swift&logoColor=white)
+![SwiftUI](https://img.shields.io/badge/SwiftUI-660000?style=flat-square&logo=swift&logoColor=white)
+
+![Qt6](https://img.shields.io/badge/Qt6-660000?style=flat-square&logo=qt&logoColor=white)
+![Linux](https://img.shields.io/badge/Linux-660000?style=flat-square&logo=linux&logoColor=white)
+![Windows](https://img.shields.io/badge/Windows-660000?style=flat-square&logo=windows&logoColor=white)
+![macOS](https://img.shields.io/badge/macOS-Development%20Pending-grey?style=flat-square&logo=apple&logoColor=white)
+
+[![status](https://img.shields.io/badge/●%20Building%20PHASE-19cae6?style=flat-square&labelColor=19cae6)](https://github.com/Cyberbee-pro/SynthFlow)
+
+</div>
+</td>
+
+<td width="33%" valign="top">
+<div align="center">
+
+**⬡ &nbsp; REM:MARK 1**
+
+</div>
+
+The Rem Mark 1 solution redefines data privacy by moving away from traditional single-point protection. Instead of relying on a solitary security gate, it wraps information in multiple specialized layers of high-level protection.
+
+<div align="center">
+
+![Cryptography](https://img.shields.io/badge/Applied%20Cryptography-660000?style=flat-square&logo=keybase&logoColor=white)
+![Obfuscation](https://img.shields.io/badge/Data%20Obfuscation-660000?style=flat-square&logo=shieldy&logoColor=white)
+![Security Architecture](https://img.shields.io/badge/System%20Architecture-660000?style=flat-square&logo=enterprise&logoColor=white)
+![Logic](https://img.shields.io/badge/Advanced%20Logic-660000?style=flat-square&logo=diagramdotnet&logoColor=white)
+
+
+[![status](https://img.shields.io/badge/●%20PLANNING%20PHASE-white?style=flat-square&labelColor=ff0000)](#)
+</div>
+</td>
+
+</tr>
+</table>
+
+
+
 
 ## 💻 Tech Stack
 
@@ -143,7 +227,22 @@
 ![Cyberbee's github activity graph](https://github-readme-activity-graph.vercel.app/graph?username=cyberbee-pro&bg_color=282a35&color=ffffff&line=ec7696&point=ffffff&area=true&hide_border=true)
 
 ###
+## `> HONORS`
 
+<div align="center">
+
+| &nbsp; | Achievement | Venue | Year |
+|:---:|---|---|:---:|
+| 🏆 | **ICPC High Honor** | ICPC Asia Regional — Chennai | 2025 |
+| 🥇 | **Top 10 / 300+** | Ultron 9.0 Hackathon | 2026 |
+| 📜  | **Patent filed**| Rem : Mark 1 - Advanced Encryption Algorithm| Active| 
+| 🔬 | **Undergraduate Researcher** | SRMIST — Quantum Optimization | Active |
+| 🥉 | **2nd runnerup in National Quiz competition**|  Top 3 teams among Hundreds in the West Bengal regional leg of Union Bank’s flagship quiz. |2023|
+
+</div>
+
+---
+###
 
 <img src="snake-dark.svg" height="200" alt="snake animation"  />
 
