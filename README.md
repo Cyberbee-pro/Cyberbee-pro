@@ -78,7 +78,7 @@
 <table>
 <tr>
 
-<td width="33%" valign="top">
+<td width="25%" valign="top">
 <div align="center">
 
 **⬡ &nbsp; Q H A C K**
@@ -95,12 +95,14 @@ Quantum Circuit Simulator with a **Quantum Noir** UI. Custom SVG canvas, 15-gate
 ![FastAPI](https://img.shields.io/badge/FastAPI-060d18?style=flat-square&logo=fastapi&logoColor=00d9ff)
 ![Qiskit](https://img.shields.io/badge/Qiskit-060d18?style=flat-square&logo=ibm&logoColor=00d9ff)
 
-[![status](https://img.shields.io/badge/●%20Building%20Phase-19cae6?style=flat-square&labelColor=19cae6)](https://github.com/Anchitlahkar)
+
+
+[![status](https://img.shields.io/badge/●%20Building%20Phase-white?style=flat-square&labelColor=19e6af)](https://github.com/Anchitlahkar)
 
 </div>
 </td>
 
-<td width="33%" valign="top">
+<td width="25%" valign="top">
 <div align="center">
 
 **⬡ &nbsp; S Y N T H F L O W**
@@ -123,12 +125,47 @@ SynthFlow is a high-performance, open-source music streaming ecosystem built to 
 ![Windows](https://img.shields.io/badge/Windows-660000?style=flat-square&logo=windows&logoColor=white)
 ![macOS](https://img.shields.io/badge/macOS-Development%20Pending-grey?style=flat-square&logo=apple&logoColor=white)
 
-[![status](https://img.shields.io/badge/●%20Building%20PHASE-19cae6?style=flat-square&labelColor=19cae6)](https://github.com/Cyberbee-pro/SynthFlow)
+[![status](https://img.shields.io/badge/●%20Building%20PHASE-white?style=flat-square&labelColor=19cae6)](https://github.com/Cyberbee-pro/SynthFlow)
 
 </div>
 </td>
+<td width="25%" valign="top">
+<div align="center">
 
-<td width="33%" valign="top">
+⬡   H A C K T I M E
+
+</div>
+
+Hackathon control room for organizers and teams. Features live countdowns, room codes, and broadcast announcements.
+
+<div align="center">
+
+![Vercel Analytics](https://img.shields.io/badge/Vercel%20Analytics-660000?style=flat-square&logo=vercel&logoColor=white)
+![Next.js](https://img.shields.io/badge/Next.js-660000?style=flat-square&logo=nextdotjs&logoColor=white)
+![React](https://img.shields.io/badge/React-660000?style=flat-square&logo=react&logoColor=white)
+![NextAuth.js](https://img.shields.io/badge/NextAuth.js-660000?style=flat-square&logo=nextdotjs&logoColor=white)
+![SWR](https://img.shields.io/badge/SWR-660000?style=flat-square&logo=vercel&logoColor=white)
+
+![Autoprefixer](https://img.shields.io/badge/Autoprefixer-660000?style=flat-square&logo=autoprefixer&logoColor=white)
+![PostCSS](https://img.shields.io/badge/PostCSS-660000?style=flat-square&logo=postcss&logoColor=white)
+![Lucide React](https://img.shields.io/badge/Lucide%20React-660000?style=flat-square&logo=lucide&logoColor=white)
+
+![Socket.io](https://img.shields.io/badge/Socket.io-660000?style=flat-square&logo=socketdotio&logoColor=white)
+
+![Express](https://img.shields.io/badge/Express-660000?style=flat-square&logo=express&logoColor=white)
+![Mongoose](https://img.shields.io/badge/Mongoose-660000?style=flat-square&logo=mongoose&logoColor=white)
+![Dotenv](https://img.shields.io/badge/Dotenv-660000?style=flat-square&logo=dotenv&logoColor=white)
+![CORS](https://img.shields.io/badge/CORS-660000?style=flat-square&logo=nodedotjs&logoColor=white)
+![Morgan](https://img.shields.io/badge/Morgan-660000?style=flat-square&logo=nodedotjs&logoColor=white)
+
+![Bcrypt](https://img.shields.io/badge/Bcrypt-660000?style=flat-square&logo=shieldy&logoColor=white)
+![Helmet](https://img.shields.io/badge/Helmet-660000?style=flat-square&logo=shieldy&logoColor=white)
+
+[![status](https://img.shields.io/badge/●%20Active-white?style=flat-square&labelColor=19e6af)](#)
+</div>
+</td>
+
+<td width="25%" valign="top">
 <div align="center">
 
 **⬡ &nbsp; REM:MARK 1**
