@@ -145,21 +145,10 @@ Hackathon control room for organizers and teams. Features live countdowns, room 
 ![React](https://img.shields.io/badge/React-660000?style=flat-square&logo=react&logoColor=white)
 ![NextAuth.js](https://img.shields.io/badge/NextAuth.js-660000?style=flat-square&logo=nextdotjs&logoColor=white)
 ![SWR](https://img.shields.io/badge/SWR-660000?style=flat-square&logo=vercel&logoColor=white)
-
-![Autoprefixer](https://img.shields.io/badge/Autoprefixer-660000?style=flat-square&logo=autoprefixer&logoColor=white)
-![PostCSS](https://img.shields.io/badge/PostCSS-660000?style=flat-square&logo=postcss&logoColor=white)
-![Lucide React](https://img.shields.io/badge/Lucide%20React-660000?style=flat-square&logo=lucide&logoColor=white)
-
 ![Socket.io](https://img.shields.io/badge/Socket.io-660000?style=flat-square&logo=socketdotio&logoColor=white)
-
 ![Express](https://img.shields.io/badge/Express-660000?style=flat-square&logo=express&logoColor=white)
 ![Mongoose](https://img.shields.io/badge/Mongoose-660000?style=flat-square&logo=mongoose&logoColor=white)
-![Dotenv](https://img.shields.io/badge/Dotenv-660000?style=flat-square&logo=dotenv&logoColor=white)
-![CORS](https://img.shields.io/badge/CORS-660000?style=flat-square&logo=nodedotjs&logoColor=white)
-![Morgan](https://img.shields.io/badge/Morgan-660000?style=flat-square&logo=nodedotjs&logoColor=white)
-
 ![Bcrypt](https://img.shields.io/badge/Bcrypt-660000?style=flat-square&logo=shieldy&logoColor=white)
-![Helmet](https://img.shields.io/badge/Helmet-660000?style=flat-square&logo=shieldy&logoColor=white)
 
 [![status](https://img.shields.io/badge/●%20Active-white?style=flat-square&labelColor=19e6af)](#)
 </div>
@@ -181,6 +170,8 @@ The Rem Mark 1 solution redefines data privacy by moving away from traditional s
 ![Security Architecture](https://img.shields.io/badge/System%20Architecture-660000?style=flat-square&logo=enterprise&logoColor=white)
 ![Logic](https://img.shields.io/badge/Advanced%20Logic-660000?style=flat-square&logo=diagramdotnet&logoColor=white)
 
+
+[![status](https://img.shields.io/badge/●%20Pattent%20Filed-white?style=flat-square&labelColor=ff0000)](#)
 
 [![status](https://img.shields.io/badge/●%20PLANNING%20PHASE-white?style=flat-square&labelColor=ff0000)](#)
 </div>
