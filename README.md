@@ -21,7 +21,7 @@
 
 - 🔭 I’m currently working in **GitHub-Community-SRM** 
 
-- 🌱 I’m currently learning **kotlin,js and few js and py frameworks**
+<!-- 🌱 I’m currently learning **kotlin,js and few js and py frameworks** -->
 
 <!-- 👯 I’m looking to collaborate on--> 
 
@@ -29,7 +29,7 @@
 
 - 💬 Ask me about **Arch , C,C++,JS**
 
-- 📫 How to reach me **cyb.shibrajdas@gmail.com**
+<!-- 📫 How to reach me **cyb.shibrajdas@gmail.com** -->
 
 - ⚡ Fun fact **I am good at photography ;)**
 
