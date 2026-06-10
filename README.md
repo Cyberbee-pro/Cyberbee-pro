@@ -36,7 +36,7 @@
 <br clear="both">
 
 <div >
- <img src="https://github-readme-stats.vercel.app/api/top-langs?username=Cyberbee-pro&locale=en&hide_title=false&layout=compact&card_width=320&langs_count=5&theme=dracula&hide_border=true&hide=jupyter%20notebook,html"/>
+ <img src="https://githubreadmelang.cybee.dpdns.org/api/top-langs?username=Cyberbee-pro&locale=en&hide_title=false&layout=compact&card_width=320&langs_count=5&theme=dracula&hide_border=true&hide=jupyter%20notebook,html,css"/>
   
   <img src="https://streak-stats.demolab.com?user=Cyberbee-pro&locale=en&mode=daily&theme=dracula&hide_border=true&border_radius=5" height="150" alt="streak graph"  />
   <p align="left">
