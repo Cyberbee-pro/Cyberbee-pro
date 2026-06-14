@@ -1,4 +1,4 @@
-<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0:330000,40:660000,80:990000,100:ff0000&height=260&section=header&text=Shibraj%20Das&fontSize=82&fontColor=ffffff&fontAlignY=42&animation=fadeIn&desc=%E2%9C%A6%20%20Quantum%20%C2%B7%20security%20%C2%B7%20System%20%C2%B7%20Architect%20%20%E2%9C%A6&descSize=17&descAlignY=65&descColor=ff4d4d"/>
+<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0:330000,40:660000,80:990000,100:ff0000&height=260&section=header&text=Cyberbee%20Pro&fontSize=82&fontColor=ffffff&fontAlignY=42&animation=fadeIn&desc=%E2%9C%A6%20%20%20%C2%B7%20System%20%C2%B7%20Architect%20%C2%B7%20Quantum%20%C2%B7%20security%20%C2%B7%20Researcher%20%20%C2%B7%20Cyber%20Security%E2%9C%A6&descSize=17&descAlignY=65&descColor=ff4d4d"/>
 
 <!-- <h1 align="center">Hi 👋, I'm Shibraj Das</h1>
 #<h3 align="center">A Aspiring/passionate Full Stack devoloper!!! based in India.</h3> -->
