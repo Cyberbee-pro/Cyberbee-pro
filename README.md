@@ -84,23 +84,21 @@
 <td width="25%" valign="top">
 <div align="center">
 
-**⬡ &nbsp; Q H A C K**
+**⬡ &nbsp; MACROBOARD : V1**
 
 </div>
-
-Quantum Circuit Simulator with a **Quantum Noir** UI. Custom SVG canvas, 15-gate system, animated Bloch sphere, and real-time simulation flow.
+A highly programmable, multi-layered custom hardware macro pad and controller built around the ESP32 architecture. This device features a full 3x3 key matrix, a mouse-emulating analog joystick, an absolute analog potentiometer dial, and dedicated mode-switching indicators.
 
 <div align="center">
 
-![Next.js](https://img.shields.io/badge/Next.js-060d18?style=flat-square&logo=nextdotjs&logoColor=00d9ff)
-![React](https://img.shields.io/badge/React-060d18?style=flat-square&logo=react&logoColor=00d9ff)
-![Zustand](https://img.shields.io/badge/Zustand-060d18?style=flat-square&logo=react&logoColor=00d9ff)
-![FastAPI](https://img.shields.io/badge/FastAPI-060d18?style=flat-square&logo=fastapi&logoColor=00d9ff)
-![Qiskit](https://img.shields.io/badge/Qiskit-060d18?style=flat-square&logo=ibm&logoColor=00d9ff)
+![Arduino](https://img.shields.io/badge/Arduino-060d18?style=flat-square&logo=arduino&logoColor=00d9ff)
+![ESP](https://img.shields.io/badge/ESP%2032-060d18?style=flat-square&logo=espressif&logoColor=00d9ff)
+![PlatformIO](https://img.shields.io/badge/platformio-060d18?style=flat-square&logo=platformio&logoColor=00d9ff)
+![Wokwi](https://img.shields.io/badge/Woki%20simulator-060d18?style=flat-square&logo=wokwi&logoColor=00d9ff)
 
 
 
-[![status](https://img.shields.io/badge/●%20Building%20Phase-white?style=flat-square&labelColor=19e6af)](https://github.com/Anchitlahkar)
+[![status](https://img.shields.io/badge/●%20Finishing%20Touches-white?style=flat-square&labelColor=19e6af)](https://github.com/Cyberbee-pro/Macro-board-1)
 
 </div>
 </td>
@@ -128,7 +126,7 @@ SynthFlow is a high-performance, open-source music streaming ecosystem built to 
 ![Windows](https://img.shields.io/badge/Windows-660000?style=flat-square&logo=windows&logoColor=white)
 ![macOS](https://img.shields.io/badge/macOS-Development%20Pending-grey?style=flat-square&logo=apple&logoColor=white)
 
-[![status](https://img.shields.io/badge/●%20Building%20PHASE-white?style=flat-square&labelColor=19cae6)](https://github.com/Cyberbee-pro/SynthFlow)
+[![status](https://img.shields.io/badge/●%20Planing%20PHASE-white?style=flat-square&labelColor=19cae6)](https://github.com/Cyberbee-pro/SynthFlow)
 
 </div>
 </td>
@@ -153,7 +151,7 @@ Hackathon control room for organizers and teams. Features live countdowns, room 
 ![Mongoose](https://img.shields.io/badge/Mongoose-660000?style=flat-square&logo=mongoose&logoColor=white)
 ![Bcrypt](https://img.shields.io/badge/Bcrypt-660000?style=flat-square&logo=shieldy&logoColor=white)
 
-[![status](https://img.shields.io/badge/●%20Active-white?style=flat-square&labelColor=19e6af)](#)
+[![status](https://img.shields.io/badge/●%20Active-white?style=flat-square&labelColor=19e6af)](https://hacktime.githubsrmist.in/)
 </div>
 </td>
 
