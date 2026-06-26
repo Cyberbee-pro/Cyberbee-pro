@@ -281,7 +281,14 @@ The Rem Mark 1 solution redefines data privacy by moving away from traditional s
 ---
 ###
 
-<img src="snake-dark.svg" height="200" alt="snake animation"  />
+# > sudo pacman -S pacmanAnimateSvg
+<div align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/SnehalDas135/SnehalDas135/output/pacman-contribution-graph-dark.svg">
+    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/SnehalDas135/SnehalDas135/output/pacman-contribution-graph.svg">
+    <img alt="pacman contribution graph" src="https://raw.githubusercontent.com/SnehalDas135/SnehalDas135/output/pacman-contribution-graph.svg" width="90%" />
+  </picture>
+</div>
 
 
 ###
