@@ -98,7 +98,7 @@ A highly programmable, multi-layered custom hardware macro pad and controller bu
 
 
 
-[![status](https://img.shields.io/badge/●%20Finishing%20Touches-white?style=flat-square&labelColor=19e6af)](https://github.com/Cyberbee-pro/Macro-board-1)
+[![status](https://img.shields.io/badge/●%20Production%20Build%20Released-white?style=flat-square&labelColor=19e6af)](https://github.com/Cyberbee-pro/Macro-board-1)
 
 </div>
 </td>
