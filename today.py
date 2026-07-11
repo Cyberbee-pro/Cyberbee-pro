@@ -10,13 +10,15 @@ import hashlib
 # Account permissions: read:Followers, read:Starring, read:Watching
 # Repository permissions: read:Commit statuses, read:Contents, read:Issues, read:Metadata, read:Pull Requests
 # Issues and pull requests permissions not needed at the moment, but may be used in the future
-if 'ACCESS_TOKEN' not in os.environ or 'USER_NAME' not in os.environ:
+ACCESS_TOKEN = os.environ.get('ACCESS_TOKEN', '').strip()
+USER_NAME = os.environ.get('USER_NAME', '').strip() or os.environ.get('GITHUB_REPOSITORY_OWNER', '').strip()
+
+if not ACCESS_TOKEN or not USER_NAME:
     raise KeyError(
         "Missing environment variables! Please ensure 'ACCESS_TOKEN' (GitHub Personal Access Token) "
         "and 'USER_NAME' (GitHub username) are set in your environment variables or GitHub Actions Secrets."
     )
-HEADERS = {'authorization': 'token '+ os.environ['ACCESS_TOKEN']}
-USER_NAME = os.environ['USER_NAME']
+HEADERS = {'authorization': 'token '+ ACCESS_TOKEN}
 QUERY_COUNT = {'user_getter': 0, 'follower_getter': 0, 'graph_repos_stars': 0, 'recursive_loc': 0, 'graph_commits': 0, 'loc_query': 0}
 
 
