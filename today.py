@@ -51,6 +51,14 @@ def simple_request(func_name, query, variables):
     """
     request = requests.post('https://api.github.com/graphql', json={'query': query, 'variables':variables}, headers=HEADERS)
     if request.status_code == 200:
+        try:
+            res_json = request.json()
+        except ValueError:
+            raise Exception(func_name, 'returned non-JSON response:', request.text, QUERY_COUNT)
+        if 'errors' in res_json:
+            raise Exception(func_name, 'has failed with API errors:', res_json['errors'], QUERY_COUNT)
+        if 'data' not in res_json or res_json['data'] is None:
+            raise Exception(func_name, 'returned response without data:', res_json, QUERY_COUNT)
         return request
     raise Exception(func_name, ' has failed with a', request.status_code, request.text, QUERY_COUNT)
 
@@ -72,7 +80,11 @@ def graph_commits(start_date, end_date):
     }'''
     variables = {'start_date': start_date,'end_date': end_date, 'login': USER_NAME}
     request = simple_request(graph_commits.__name__, query, variables)
-    return int(request.json()['data']['user']['contributionsCollection']['contributionCalendar']['totalContributions'])
+    res_json = request.json()
+    user_data = res_json.get('data', {}).get('user')
+    if user_data is None:
+        raise Exception(f"graph_commits could not resolve user '{USER_NAME}'. The API returned: {res_json}")
+    return int(user_data['contributionsCollection']['contributionCalendar']['totalContributions'])
 
 
 def graph_repos_stars(count_type, owner_affiliation, cursor=None, add_loc=0, del_loc=0):
@@ -104,11 +116,14 @@ def graph_repos_stars(count_type, owner_affiliation, cursor=None, add_loc=0, del
     }'''
     variables = {'owner_affiliation': owner_affiliation, 'login': USER_NAME, 'cursor': cursor}
     request = simple_request(graph_repos_stars.__name__, query, variables)
-    if request.status_code == 200:
-        if count_type == 'repos':
-            return request.json()['data']['user']['repositories']['totalCount']
-        elif count_type == 'stars':
-            return stars_counter(request.json()['data']['user']['repositories']['edges'])
+    res_json = request.json()
+    user_data = res_json.get('data', {}).get('user')
+    if user_data is None:
+        raise Exception(f"graph_repos_stars could not resolve user '{USER_NAME}'. The API returned: {res_json}")
+    if count_type == 'repos':
+        return user_data['repositories']['totalCount']
+    elif count_type == 'stars':
+        return stars_counter(user_data['repositories']['edges'])
 
 
 def recursive_loc(owner, repo_name, data, cache_comment, addition_total=0, deletion_total=0, my_commits=0, cursor=None):
@@ -151,8 +166,23 @@ def recursive_loc(owner, repo_name, data, cache_comment, addition_total=0, delet
     variables = {'repo_name': repo_name, 'owner': owner, 'cursor': cursor}
     request = requests.post('https://api.github.com/graphql', json={'query': query, 'variables':variables}, headers=HEADERS) # I cannot use simple_request(), because I want to save the file before raising Exception
     if request.status_code == 200:
-        if request.json()['data']['repository']['defaultBranchRef'] != None: # Only count commits if repo isn't empty
-            return loc_counter_one_repo(owner, repo_name, data, cache_comment, request.json()['data']['repository']['defaultBranchRef']['target']['history'], addition_total, deletion_total, my_commits)
+        try:
+            res_json = request.json()
+        except ValueError:
+            force_close_file(data, cache_comment)
+            raise Exception('recursive_loc() returned non-JSON response:', request.text, QUERY_COUNT)
+        if 'errors' in res_json:
+            force_close_file(data, cache_comment)
+            raise Exception('recursive_loc() has failed with API errors:', res_json['errors'], QUERY_COUNT)
+        if 'data' not in res_json or res_json['data'] is None:
+            force_close_file(data, cache_comment)
+            raise Exception('recursive_loc() returned response without data:', res_json, QUERY_COUNT)
+        repo_data = res_json['data'].get('repository')
+        if repo_data is None:
+            force_close_file(data, cache_comment)
+            raise Exception(f"recursive_loc() could not resolve repository '{repo_name}' for owner '{owner}'. The API returned: {res_json}")
+        if repo_data['defaultBranchRef'] != None: # Only count commits if repo isn't empty
+            return loc_counter_one_repo(owner, repo_name, data, cache_comment, repo_data['defaultBranchRef']['target']['history'], addition_total, deletion_total, my_commits)
         else: return 0
     force_close_file(data, cache_comment) # saves what is currently in the file before this program crashes
     if request.status_code == 403:
@@ -213,11 +243,15 @@ def loc_query(owner_affiliation, comment_size=0, force_cache=False, cursor=None,
     }'''
     variables = {'owner_affiliation': owner_affiliation, 'login': USER_NAME, 'cursor': cursor}
     request = simple_request(loc_query.__name__, query, variables)
-    if request.json()['data']['user']['repositories']['pageInfo']['hasNextPage']:   # If repository data has another page
-        edges += request.json()['data']['user']['repositories']['edges']            # Add on to the LoC count
-        return loc_query(owner_affiliation, comment_size, force_cache, request.json()['data']['user']['repositories']['pageInfo']['endCursor'], edges)
+    res_json = request.json()
+    user_data = res_json.get('data', {}).get('user')
+    if user_data is None:
+        raise Exception(f"loc_query could not resolve user '{USER_NAME}'. The API returned: {res_json}")
+    if user_data['repositories']['pageInfo']['hasNextPage']:   # If repository data has another page
+        edges += user_data['repositories']['edges']            # Add on to the LoC count
+        return loc_query(owner_affiliation, comment_size, force_cache, user_data['repositories']['pageInfo']['endCursor'], edges)
     else:
-        return cache_builder(edges + request.json()['data']['user']['repositories']['edges'], comment_size, force_cache)
+        return cache_builder(edges + user_data['repositories']['edges'], comment_size, force_cache)
 
 
 def cache_builder(edges, comment_size, force_cache, loc_add=0, loc_del=0):
@@ -394,7 +428,11 @@ def user_getter(username):
     }'''
     variables = {'login': username}
     request = simple_request(user_getter.__name__, query, variables)
-    return {'id': request.json()['data']['user']['id']}, request.json()['data']['user']['createdAt']
+    res_json = request.json()
+    user_data = res_json.get('data', {}).get('user')
+    if user_data is None:
+        raise Exception(f"user_getter could not resolve user '{username}'. The API returned: {res_json}")
+    return {'id': user_data['id']}, user_data['createdAt']
 
 def follower_getter(username):
     """
@@ -410,7 +448,11 @@ def follower_getter(username):
         }
     }'''
     request = simple_request(follower_getter.__name__, query, {'login': username})
-    return int(request.json()['data']['user']['followers']['totalCount'])
+    res_json = request.json()
+    user_data = res_json.get('data', {}).get('user')
+    if user_data is None:
+        raise Exception(f"follower_getter could not resolve user '{username}'. The API returned: {res_json}")
+    return int(user_data['followers']['totalCount'])
 
 
 def query_count(funct_id):
