@@ -270,7 +270,7 @@ The Rem Mark 1 solution redefines data privacy by moving away from traditional s
 
 ###
 
-![Cyberbee's github activity graph](https://github-readme-activity-graph.vercel.app/graph?username=cyberbee-pro&bg_color=282a35&color=ffffff&line=ec7696&point=ffffff&area=true&hide_border=true&v=1)
+![Cyberbee's github activity graph](https://github-readme-activity-graph-nine-delta.vercel.app/graph?username=cyberbee-pro&bg_color=282a35&color=ffffff&line=ec7696&point=ffffff&area=true&hide_border=true)
 
 ###
 ## `> HONORS`
