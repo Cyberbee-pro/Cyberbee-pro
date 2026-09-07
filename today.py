@@ -51,18 +51,39 @@ def simple_request(func_name, query, variables):
     """
     Returns a request, or raises an Exception if the response does not succeed.
     """
-    request = requests.post('https://api.github.com/graphql', json={'query': query, 'variables':variables}, headers=HEADERS)
-    if request.status_code == 200:
+    retries = 3
+    base_delay = 2
+    for attempt in range(retries + 1):
         try:
-            res_json = request.json()
-        except ValueError:
-            raise Exception(func_name, 'returned non-JSON response:', request.text, QUERY_COUNT)
-        if 'errors' in res_json:
-            raise Exception(func_name, 'has failed with API errors:', res_json['errors'], QUERY_COUNT)
-        if 'data' not in res_json or res_json['data'] is None:
-            raise Exception(func_name, 'returned response without data:', res_json, QUERY_COUNT)
-        return request
-    raise Exception(func_name, ' has failed with a', request.status_code, request.text, QUERY_COUNT)
+            request = requests.post('https://api.github.com/graphql', json={'query': query, 'variables':variables}, headers=HEADERS, timeout=15)
+            if request.status_code == 200:
+                try:
+                    res_json = request.json()
+                except ValueError:
+                    if attempt < retries:
+                        time.sleep(base_delay * (2 ** attempt))
+                        continue
+                    raise Exception(func_name, 'returned non-JSON response:', request.text, QUERY_COUNT)
+                if 'errors' in res_json:
+                    if attempt < retries:
+                        time.sleep(base_delay * (2 ** attempt))
+                        continue
+                    raise Exception(func_name, 'has failed with API errors:', res_json['errors'], QUERY_COUNT)
+                if 'data' not in res_json or res_json['data'] is None:
+                    if attempt < retries:
+                        time.sleep(base_delay * (2 ** attempt))
+                        continue
+                    raise Exception(func_name, 'returned response without data:', res_json, QUERY_COUNT)
+                return request
+            if request.status_code in (502, 503) and attempt < retries:
+                time.sleep(base_delay * (2 ** attempt))
+                continue
+            raise Exception(func_name, ' has failed with a', request.status_code, request.text, QUERY_COUNT)
+        except requests.exceptions.RequestException as e:
+            if attempt < retries:
+                time.sleep(base_delay * (2 ** attempt))
+                continue
+            raise Exception(func_name, 'has failed due to a network error:', str(e), QUERY_COUNT)
 
 
 def graph_commits(start_date, end_date):
@@ -166,30 +187,52 @@ def recursive_loc(owner, repo_name, data, cache_comment, addition_total=0, delet
         }
     }'''
     variables = {'repo_name': repo_name, 'owner': owner, 'cursor': cursor}
-    request = requests.post('https://api.github.com/graphql', json={'query': query, 'variables':variables}, headers=HEADERS) # I cannot use simple_request(), because I want to save the file before raising Exception
-    if request.status_code == 200:
+    retries = 3
+    base_delay = 2
+    for attempt in range(retries + 1):
         try:
-            res_json = request.json()
-        except ValueError:
+            request = requests.post('https://api.github.com/graphql', json={'query': query, 'variables':variables}, headers=HEADERS, timeout=15)
+            if request.status_code == 200:
+                try:
+                    res_json = request.json()
+                except ValueError:
+                    if attempt < retries:
+                        time.sleep(base_delay * (2 ** attempt))
+                        continue
+                    force_close_file(data, cache_comment)
+                    raise Exception('recursive_loc() returned non-JSON response:', request.text, QUERY_COUNT)
+                if 'errors' in res_json:
+                    if attempt < retries:
+                        time.sleep(base_delay * (2 ** attempt))
+                        continue
+                    force_close_file(data, cache_comment)
+                    raise Exception('recursive_loc() has failed with API errors:', res_json['errors'], QUERY_COUNT)
+                if 'data' not in res_json or res_json['data'] is None:
+                    if attempt < retries:
+                        time.sleep(base_delay * (2 ** attempt))
+                        continue
+                    force_close_file(data, cache_comment)
+                    raise Exception('recursive_loc() returned response without data:', res_json, QUERY_COUNT)
+                repo_data = res_json['data'].get('repository')
+                if repo_data is None:
+                    force_close_file(data, cache_comment)
+                    raise Exception(f"recursive_loc() could not resolve repository '{repo_name}' for owner '{owner}'. The API returned: {res_json}")
+                if repo_data['defaultBranchRef'] != None: # Only count commits if repo isn't empty
+                    return loc_counter_one_repo(owner, repo_name, data, cache_comment, repo_data['defaultBranchRef']['target']['history'], addition_total, deletion_total, my_commits)
+                else: return 0
+            if request.status_code in (502, 503) and attempt < retries:
+                time.sleep(base_delay * (2 ** attempt))
+                continue
+            force_close_file(data, cache_comment) # saves what is currently in the file before this program crashes
+            if request.status_code == 403:
+                raise Exception('Too many requests in a short amount of time!\nYou\'ve hit the non-documented anti-abuse limit!')
+            raise Exception('recursive_loc() has failed with a', request.status_code, request.text, QUERY_COUNT)
+        except requests.exceptions.RequestException as e:
+            if attempt < retries:
+                time.sleep(base_delay * (2 ** attempt))
+                continue
             force_close_file(data, cache_comment)
-            raise Exception('recursive_loc() returned non-JSON response:', request.text, QUERY_COUNT)
-        if 'errors' in res_json:
-            force_close_file(data, cache_comment)
-            raise Exception('recursive_loc() has failed with API errors:', res_json['errors'], QUERY_COUNT)
-        if 'data' not in res_json or res_json['data'] is None:
-            force_close_file(data, cache_comment)
-            raise Exception('recursive_loc() returned response without data:', res_json, QUERY_COUNT)
-        repo_data = res_json['data'].get('repository')
-        if repo_data is None:
-            force_close_file(data, cache_comment)
-            raise Exception(f"recursive_loc() could not resolve repository '{repo_name}' for owner '{owner}'. The API returned: {res_json}")
-        if repo_data['defaultBranchRef'] != None: # Only count commits if repo isn't empty
-            return loc_counter_one_repo(owner, repo_name, data, cache_comment, repo_data['defaultBranchRef']['target']['history'], addition_total, deletion_total, my_commits)
-        else: return 0
-    force_close_file(data, cache_comment) # saves what is currently in the file before this program crashes
-    if request.status_code == 403:
-        raise Exception('Too many requests in a short amount of time!\nYou\'ve hit the non-documented anti-abuse limit!')
-    raise Exception('recursive_loc() has failed with a', request.status_code, request.text, QUERY_COUNT)
+            raise Exception('recursive_loc() has failed due to a network error:', str(e), QUERY_COUNT)
 
 
 def loc_counter_one_repo(owner, repo_name, data, cache_comment, history, addition_total, deletion_total, my_commits):
