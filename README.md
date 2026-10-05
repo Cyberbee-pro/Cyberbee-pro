@@ -205,7 +205,7 @@ The Rem Mark 1 solution redefines data privacy by moving away from traditional s
 ![Kotlin](https://img.shields.io/badge/kotlin-%237F52FF.svg?style=for-the-badge&logo=kotlin&logoColor=white)
 ![Python](https://img.shields.io/badge/Python-3776AB.svg?style=for-the-badge&logo=python&logoColor=white) 
 ![Dart](https://img.shields.io/badge/dart-%230175C2.svg?style=for-the-badge&logo=dart&logoColor=white) 
-![Swift](https://img.shields.io/badge/swift-F54411?style=for-the-badge&logo=swift&logoColor=white) 
+<!-- ![Swift](https://img.shields.io/badge/swift-F54411?style=for-the-badge&logo=swift&logoColor=white)  -->
 ![Lua](https://img.shields.io/badge/Lua-000080.svg?style=for-the-badge&logo=Lua&logoColor=white) 
 ![Bash](https://img.shields.io/badge/GNU%20Bash-4EAA25?style=for-the-badge&logo=GNU%20Bash&logoColor=white)
 
@@ -238,12 +238,12 @@ The Rem Mark 1 solution redefines data privacy by moving away from traditional s
 ![SQLITE](https://img.shields.io/badge/sqlite-4479A1.svg?style=for-the-badge&logo=sqlite&logoColor=white) 
 ![Postgres](https://img.shields.io/badge/postgres-%23316192.svg?style=for-the-badge&logo=postgresql&logoColor=white) 
 ![Firebase](https://img.shields.io/badge/firebase-%23039BE5.svg?style=for-the-badge&logo=firebase) 
-![Prisma](https://img.shields.io/badge/Prisma-3982CE?style=for-the-badge&logo=Prisma&logoColor=white)
-
+<!-- ![Prisma](https://img.shields.io/badge/Prisma-3982CE?style=for-the-badge&logo=Prisma&logoColor=white) -->
+<!-- 
 ### 🎮 Mobile & Game Development
 ![Flutter](https://img.shields.io/badge/Flutter-%2302569B.svg?style=for-the-badge&logo=Flutter&logoColor=white) 
 ![Unity](https://img.shields.io/badge/unity-%23000000.svg?style=for-the-badge&logo=unity&logoColor=white) 
-![Unreal Engine](https://img.shields.io/badge/unrealengine-%23313131.svg?style=for-the-badge&logo=unrealengine&logoColor=white) 
+![Unreal Engine](https://img.shields.io/badge/unrealengine-%23313131.svg?style=for-the-badge&logo=unrealengine&logoColor=white)  -->
 
 ### 📊 Data Science & AI
 ![NumPy](https://img.shields.io/badge/numpy-%23013243.svg?style=for-the-badge&logo=numpy&logoColor=white) 
