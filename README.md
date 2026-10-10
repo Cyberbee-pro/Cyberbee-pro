@@ -37,7 +37,7 @@
 
 <!-- - 🤝 I’m looking for help with **DBMS** -->
 
-- 💬 Ask me about **Arch,C,C++,Embeded Systems**
+- 💬 Ask me about **Linux,C,C++,Embeded Systems**
 
 <!-- 📫 How to reach me **cyb.shibrajdas@gmail.com** -->
 
