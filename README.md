@@ -29,7 +29,7 @@
 
 ![Follow X](https://img.shields.io/badge/Follow%20@mrcyberbee-1DA1F2?style=for-the-badge&logo=X&logoColor=FFFFFF&labelColor=0052cc)
 
-- 🔭 I’m currently working in **GitHub-Community-SRM** 
+- 🔭 I’m currently working in **GitHub-Community-SRM - Tech Lead** 
 
 <!-- 🌱 I’m currently learning **kotlin,js and few js and py frameworks** -->
 
@@ -109,14 +109,14 @@ A highly programmable, multi-layered custom hardware macro pad and controller bu
 
 </div>
 </td>
-
+<!-- 
 <td width="25%" valign="top">
 <div align="center">
 
-**⬡ &nbsp; S Y N T H F L O W**
+<!-- **⬡ &nbsp; S Y N T H F L O W** -->
 
-</div>
-
+<!-- </div> -->
+<!-- 
 SynthFlow is a high-performance, open-source music streaming ecosystem built to give the music back to the listener. Inspired by the "01" leek aesthetic, it offers a seamless, high-fidelity audio experience completely free from ad interruptions.
 
 <div align="center">
@@ -136,7 +136,33 @@ SynthFlow is a high-performance, open-source music streaming ecosystem built to 
 [![status](https://img.shields.io/badge/●%20Planing%20PHASE-white?style=flat-square&labelColor=19cae6)](https://github.com/Cyberbee-pro/SynthFlow)
 
 </div>
+</td> -->
+<td width="25%" valign="top">
+<div align="center">
+
+⬡   MORSE LANG
+
+</div>
+
+Morse Lang is a specialized compiler that translates .cym2c source files featuring embedded Morse code into pure GNU assembly and links them into native executables. It processes code through a modular pipeline—lexing tokens and decoding Morse strings, parsing an intermediate representation, and generating x86-64 assembly backed by custom runtime libraries.
+
+<div align="center">
+
+![C++](https://img.shields.io/badge/C++17-4B644A?style=flat-square&logo=cplusplus&logoColor=white)
+![Assembly](https://img.shields.io/badge/GNU_Assembly-6E4B3C?style=flat-square&logo=gnu&logoColor=white)
+![Bash](https://img.shields.io/badge/Shell_Script-89B482?style=flat-square&logo=gnubash&logoColor=black)
+![GCC](https://img.shields.io/badge/GCC_Toolchain-4B644A?style=flat-square&logo=gnu&logoColor=white)
+![Linux](https://img.shields.io/badge/Linux_x86--64-111111?style=flat-square&logo=linux&logoColor=white)
+
+[![License: GPL v3](https://img.shields.io/badge/License-GPL_v3-4B644A?style=flat-square&logo=gnu&logoColor=white)](https://www.gnu.org/licenses/gpl-3.0.en.html)
+[![Repo Status](https://img.shields.io/badge/●%20Active-white?style=flat-square&labelColor=A3C586)](https://github.com/Cyberbee-pro/morse-lang)
+[![Architecture](https://img.shields.io/badge/Architecture-x86--64-111111?style=flat-square&logo=intel&logoColor=white)](https://github.com/Cyberbee-pro/morse-lang)
+
+</div>
 </td>
+
+
+
 <td width="25%" valign="top">
 <div align="center">
 
@@ -161,6 +187,7 @@ Hackathon control room for organizers and teams. Features live countdowns, room 
 [![status](https://img.shields.io/badge/●%20Active-white?style=flat-square&labelColor=19e6af)](https://hacktime.githubsrmist.in/)
 </div>
 </td>
+
 
 <td width="25%" valign="top">
 <div align="center">
