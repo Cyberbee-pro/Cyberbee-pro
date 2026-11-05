@@ -29,7 +29,7 @@
 
 ![Follow X](https://img.shields.io/badge/Follow%20@mrcyberbee-1DA1F2?style=for-the-badge&logo=X&logoColor=FFFFFF&labelColor=0052cc)
 
-- 🔭 I’m currently working in **GitHub-Community-SRM - Tech Lead** 
+- 🔭 I’m currently working at **GitHub-Community-SRM - Tech Lead** 
 
 <!-- 🌱 I’m currently learning **kotlin,js and few js and py frameworks** -->
 
@@ -48,7 +48,7 @@
 <div >
  <img src="https://githubreadmelang.cybee.dpdns.org/api/top-langs?username=Cyberbee-pro&locale=en&hide_title=false&layout=compact&card_width=320&langs_count=20&theme=dracula&hide_border=true&size_weight=0&count_weight=1"/>
   
-  <img src="https://streak-stats.demolab.com?user=Cyberbee-pro&locale=en&mode=daily&theme=dracula&hide_border=true&border_radius=5" height="150" alt="streak graph"  />
+  <img src="https://github-readme-stats-fast.vercel.app/api/streak?username=Cyberbee-pro&theme=tokyonight" height="150" alt="streak graph"  />
   <p align="left">
 
 </div>
